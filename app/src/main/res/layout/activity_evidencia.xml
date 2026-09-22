@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Encabezado con flecha de atrás -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarEvidencia"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4CAF50"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Evidencias"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- Botón circular tipo Cámara -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCamara"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="60dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#E0E0E0"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cámara"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_gravity="center" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Vista previa de la foto recién tomada -->
+        <ImageView
+            android:id="@+id/imgVistaPrevia"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:contentDescription="Vista previa foto" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guardar Foto"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white" />
+
+        <!-- Etiqueta Fotos Guardadas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fotos guardadas"
+            android:gravity="center"
+            android:background="#E0E0E0"
+            android:padding="8dp"
+            android:textColor="#666666"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Galería dinámica con Scroll Horizontal -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:id="@+id/contenedorGaleria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp" />
+        </HorizontalScrollView>
+    </LinearLayout>
+
+</LinearLayout>
