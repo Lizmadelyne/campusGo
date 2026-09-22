@@ -55,10 +55,6 @@ class HomeActivity : AppCompatActivity() {
                 true
             }
 
-            R.id.nav_log_out -> {
-                mostrarInicio()
-                true
-            }
             else -> super.onOptionsItemSelected(item)
         }
     }

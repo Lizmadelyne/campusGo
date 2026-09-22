@@ -10,7 +10,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:fitsSystemWindows="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Bienvenida a CampusGO"
+                android:text="Bienvenid@ a CampusGO"
                 android:textColor="@android:color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -46,7 +47,7 @@
                 android:gravity="center"
                 android:text="Esta es una app para organizar tus tareas académicas."
                 android:textColor="@android:color/darker_gray"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btnRegister"
