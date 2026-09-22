@@ -27,7 +27,7 @@ public class activity_notificacion extends AppCompatActivity {
         super.onCreate(savedInstanceState); // Llama al constructor de inicialización de la superclase
         EdgeToEdge.enable(this); // Fuerza el modo inmersivo de dibujo de borde a borde en la pantalla
         setContentView(R.layout.activity_notificacion); // Infla el archivo XML y dibuja la interfaz de notificaciones
-        
+
         // Configura el ajuste de márgenes internos para que el diseño respete las barras del sistema
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars()); // Obtiene dimensiones físicas de las barras
@@ -61,7 +61,7 @@ public class activity_notificacion extends AppCompatActivity {
                 Toast.makeText(this, "Notificaciones activadas", Toast.LENGTH_SHORT).show();
             } else { // Si el interruptor principal fue apagado de forma explícita
                 // Apaga visualmente y fuerza el estado falso en ambos interruptores secundarios por consistencia
-                switch1Dia.setChecked(false); 
+                switch1Dia.setChecked(false);
                 switch3Dias.setChecked(false);
                 // Notifica al usuario de forma flotante la desactivación total del sistema de alertas
                 Toast.makeText(this, "Notificaciones desactivadas", Toast.LENGTH_SHORT).show();
