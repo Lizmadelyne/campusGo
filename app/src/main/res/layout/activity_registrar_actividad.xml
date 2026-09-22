@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FA"
+    android:padding="20dp">
+
+    <!-- Barra de Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5. Registrar Actividad"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#212529"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Campo Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Título de la actividad"
+        android:textColor="#495057"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Ej. Entrega de Proyecto"
+        android:background="@android:drawable/editbox_background_normal"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo Descripción -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción"
+        android:textColor="#495057"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Escribe los detalles..."
+        android:gravity="top"
+        android:background="@android:drawable/editbox_background_normal"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Campo Fecha -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de entrega"
+        android:textColor="#495057"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="DD/MM/AAAA"
+        android:background="@android:drawable/editbox_background_normal"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Botón Guardar Estilizado -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Guardar Actividad"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#4CAF50"
+        android:textStyle="bold"/>
+
+</LinearLayout>
