@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat; // Gestión avanzada de los márge
 /**
  * Actividad Principal que actúa como el menú de navegación de la aplicación.
  */
-public class MainActivity extends AppCompatActivity {
+public class PrincipalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         // Asigna un escuchador de eventos click al botón de evidencias
         btnIrEvidencia.setOnClickListener(v -> {
             // Define una intención explícita para navegar desde el contexto actual hacia activity_evidencia
-            Intent intent = new Intent(MainActivity.this, activity_evidencia.class);
+            Intent intent = new Intent(PrincipalActivity.this, activity_evidencia.class);
             startActivity(intent); // Inicia la nueva actividad en el dispositivo
         });
 
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         // Asigna un escuchador de eventos click al botón de notificaciones
         btnIrNotificacion.setOnClickListener(v -> {
             // Define una intención explícita para navegar desde el contexto actual hacia activity_notificacion
-            Intent intent = new Intent(MainActivity.this, activity_notificacion.class);
+            Intent intent = new Intent(PrincipalActivity.this, activity_notificacion.class);
             startActivity(intent); // Inicia la nueva actividad en el dispositivo
         });
     }
