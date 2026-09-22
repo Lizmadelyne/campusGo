@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Encabezado con flecha de atrás y título -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#4CAF50"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:title="Configurar Notificaciones"
+        app:titleTextColor="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Mensaje de la actividad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de alertas para la actividad actual"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000003"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Opción Principal: Activar todo -->
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switchPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar Notificaciones"
+            android:textSize="16sp"
+            android:textColor="#000003"
+            android:checked="false"
+            android:layout_marginBottom="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Opción 1 día antes -->
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch1Dia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notificar 1 día antes de la entrega"
+            android:textSize="14sp"
+            android:textColor="#000003"
+            android:enabled="false"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Opción 3 días antes -->
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:id="@+id/switch3Dias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notificar 3 días antes de la entrega"
+            android:textSize="14sp"
+            android:textColor="#000003"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+</LinearLayout>
