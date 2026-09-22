@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerfilEstudiante">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:paddingTop="32dp" android:paddingStart="24dp" android:paddingEnd="24dp" android:paddingBottom="32dp">
+            <!--  Titulo de la pantalla  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Perfil del estudiante" android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="24dp"/>
+            <!--  Foto de perfil (placeholder circular)  -->
+            <ImageView android:id="@+id/imgFotoPerfil" android:layout_width="110dp" android:layout_height="110dp" android:background="@drawable/bg_circle_placeholder" android:contentDescription="Foto del estudiante" android:padding="24dp" android:src="@android:drawable/ic_menu_camera" android:scaleType="centerInside" android:layout_marginBottom="24dp"/>
+            <!--  ===== Nombre completo =====  -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nombre completo" android:textSize="13sp" android:textColor="#888888" android:layout_marginTop="8dp"/>
+            <TextView android:id="@+id/tvNombreCompleto" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Juan Pérez Rodríguez" android:textSize="17sp" android:textColor="#000000" android:paddingTop="4dp" android:paddingBottom="10dp"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD"/>
+            <!--  ===== Programa academico =====  -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Programa académico" android:textSize="13sp" android:textColor="#888888" android:layout_marginTop="12dp"/>
+            <TextView android:id="@+id/tvPrograma" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ingeniería de Sistemas" android:textSize="17sp" android:textColor="#000000" android:paddingTop="4dp" android:paddingBottom="10dp"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD"/>
+            <!--  ===== Correo institucional =====  -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Correo institucional" android:textSize="13sp" android:textColor="#888888" android:layout_marginTop="12dp"/>
+            <TextView android:id="@+id/tvCorreo" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="juan.perez@unad.edu.co" android:textSize="17sp" android:textColor="#000000" android:paddingTop="4dp" android:paddingBottom="10dp"/>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD"/>
+            <!--  ===== Semestre =====  -->
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Semestre" android:textSize="13sp" android:textColor="#888888" android:layout_marginTop="12dp"/>
+            <TextView android:id="@+id/tvSemestre" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sexto semestre" android:textSize="17sp" android:textColor="#000000" android:paddingTop="4dp" android:paddingBottom="10dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

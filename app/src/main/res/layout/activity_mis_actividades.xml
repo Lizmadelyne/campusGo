@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MisActividades">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="28dp" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingBottom="28dp">
+            <!--  Titulo de la pantalla  -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mis actividades" android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="16dp"/>
+            <!--  Buscador (solo visual)  -->
+            <EditText android:layout_width="match_parent" android:layout_height="48dp" android:hint="Buscar actividad" android:background="@android:drawable/edit_text" android:paddingStart="14dp" android:paddingEnd="14dp" android:inputType="text" android:enabled="false" android:layout_marginBottom="20dp"/>
+            <!--  ===== Item 1 =====  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="#F2F2F2" android:padding="14dp" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Taller de Bases de Datos" android:textSize="16sp" android:textStyle="bold" android:textColor="#000000"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Entrega: 20 sept. 2026 · Bases de Datos" android:textSize="13sp" android:textColor="#777777" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <!--  ===== Item 2 =====  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="#F2F2F2" android:padding="14dp" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Informe de laboratorio" android:textSize="16sp" android:textStyle="bold" android:textColor="#000000"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Entrega: 25 sept. 2026 · Física" android:textSize="13sp" android:textColor="#777777" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <!--  ===== Item 3 =====  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="#F2F2F2" android:padding="14dp" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Exposición grupal" android:textSize="16sp" android:textStyle="bold" android:textColor="#000000"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Entrega: 30 sept. 2026 · Desarrollo Mobile" android:textSize="13sp" android:textColor="#777777" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+            <!--  ===== Item 4 =====  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="#F2F2F2" android:padding="14dp" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quiz virtual" android:textSize="16sp" android:textStyle="bold" android:textColor="#000000"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Entrega: 3 oct. 2026 · Cálculo" android:textSize="13sp" android:textColor="#777777" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
