@@ -7,8 +7,6 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,7 +16,7 @@ class HomeActivity : AppCompatActivity() {
 
         // Botones
         val btnRegister = findViewById<Button>(R.id.btnRegister)
-        val btnLogin = findViewById<Button>(R.id.btnLogin)
+        val btnLogin = findViewById<Button>(R.id.btnIngresar)
 
         btnRegister.setOnClickListener {
             val intent = Intent(this, RegistroActivity::class.java)
