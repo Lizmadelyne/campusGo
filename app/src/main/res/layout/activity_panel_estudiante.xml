@@ -15,7 +15,7 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/texBienvenido"
             android:layout_width="251dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
@@ -27,7 +27,7 @@
         <GridLayout
             android:id="@+id/gridPanelEstudiante"
             android:layout_width="match_parent"
-            android:layout_height="344dp"
+            android:layout_height="wrap_content"
             android:alignmentMode="alignMargins"
             android:columnCount="2"
             android:columnOrderPreserved="false"
@@ -36,48 +36,57 @@
 
             <Button
                 android:id="@+id/btnMisActividades"
-                android:layout_width="10dp"
-                android:layout_height="143dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_row="0"
                 android:layout_column="0"
                 android:layout_columnWeight="1"
+                android:layout_margin="8dp"
                 android:background="#2196F3"
                 android:text="Mis actividades"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                tools:textSize="20sp" />
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btnPerfil"
-                android:layout_width="15dp"
-                android:layout_height="135dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
                 android:layout_columnWeight="1"
+                android:layout_margin="8dp"
                 android:background="#E976B2"
                 android:text="Perfil"
-                tools:textSize="20sp" />
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btnEvidencias"
                 android:layout_width="0dp"
-                android:layout_height="122dp"
+                android:layout_height="wrap_content"
                 android:layout_row="1"
                 android:layout_column="0"
                 android:layout_columnWeight="1"
+                android:layout_margin="8dp"
                 android:background="#FF9800"
                 android:text="Evidencias"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <Button
                 android:id="@+id/btnNotificaciones"
                 android:layout_width="0dp"
-                android:layout_height="136dp"
+                android:layout_height="wrap_content"
                 android:layout_row="1"
                 android:layout_column="1"
                 android:layout_columnWeight="1"
-                android:backgroundTint="#2DD931"
+                android:layout_margin="8dp"
+                android:background="#2DD931"
                 android:text="Notificaciones"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
-
         </GridLayout>
+
 
     </LinearLayout>
 

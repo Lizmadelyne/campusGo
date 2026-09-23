@@ -14,11 +14,85 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:text="Pantalla de Registro"
-            android:textSize="20sp"
-            android:textStyle="bold"
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="43dp"
+            android:text="Formulario de registro"
+            android:textColor="#3F51B5"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Apellido" />
+
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="programa  academico:" />
+
+        <EditText
+            android:id="@+id/editTextText7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="celular:" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="semestre:" />
+
+        <EditText
+            android:id="@+id/editTextText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="E-mail:" />
+
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:text="contraseña:" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Acepto los terminos y condiciones" />
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:text="Registrar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#EBFFFFFF" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

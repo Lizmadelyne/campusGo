@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
 
         val btnIngresar = findViewById<Button>(R.id.btnIngresar)
         btnIngresar.setOnClickListener {
-            val intent = Intent(this, PerfilEstudiante::class.java)
+            val intent = Intent(this, PanelEstudiante::class.java)
             startActivity(intent)
         }
 
