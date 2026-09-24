@@ -41,7 +41,7 @@ public class activity_evidencia extends AppCompatActivity {
     private final List<Bitmap> listaFotos = new ArrayList<>();
     private Bitmap fotoActual; // Variable temporal para resguardar la última foto capturada sin guardar
 
-    // Lanzadores asíncronos para evitar el uso del método obsoleto startActivityForResult
+    // Lanzadores asíncronos para evitar el uso del metodo obsoleto startActivityForResult
     private ActivityResultLauncher<Intent> cameraLauncher; // Maneja el resultado devuelto por la aplicación de cámara
     private ActivityResultLauncher<String> requestPermissionLauncher; // Maneja la respuesta del usuario ante la solicitud de permisos
 

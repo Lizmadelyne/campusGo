@@ -19,8 +19,8 @@ public class activity_notificacion extends AppCompatActivity {
 
     // Variables globales para mapear los interruptores lógicos de la interfaz gráfica
     private MaterialSwitch switchPrincipal; // Interruptor maestro para activar/desactivar todas las alertas
-    private MaterialSwitch switch1Dia; // Selector para activar avisos con 1 día de anticipación
-    private MaterialSwitch switch3Dias; // Selector para activar avisos con 3 días de anticipación
+    private MaterialSwitch switch1Dia;
+    private MaterialSwitch switch3Dias;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +42,7 @@ public class activity_notificacion extends AppCompatActivity {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true); // Inserta el botón visual de la flecha de navegación hacia atrás
             getSupportActionBar().setDisplayShowHomeEnabled(true); // Activa el comportamiento interactivo del botón home
         }
-        // Registra la acción click sobre la flecha superior llamando al método nativo de retroceso
+        // Registra la acción click sobre la flecha superior llamando al metodo nativo de retroceso
         toolbar.setNavigationOnClickListener(v -> onBackPressed());
 
         // Vinculación de los controles de interfaz gráfica con los objetos lógicos Java
