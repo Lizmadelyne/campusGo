@@ -31,12 +31,12 @@ class PanelEstudiante : AppCompatActivity() {
         }
         val btnEvidencias = findViewById<Button>(R.id.btnEvidencias)
         btnEvidencias.setOnClickListener {
-            val intent = Intent(this, activity_evidencia::class.java)
+            val intent = Intent(this, evidencias::class.java)
             startActivity(intent)
         }
         val btnNotificaciones = findViewById<Button>(R.id.btnNotificaciones)
         btnNotificaciones.setOnClickListener {
-            val intent = Intent(this, activity_notificacion::class.java)
+            val intent = Intent(this, notificaciones::class.java)
             startActivity(intent)
         }
 

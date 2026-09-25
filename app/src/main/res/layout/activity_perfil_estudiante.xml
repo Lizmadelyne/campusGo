@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PerfilEstudiante">
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <ScrollView
+        android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
         <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_horizontal" android:paddingTop="32dp" android:paddingStart="24dp" android:paddingEnd="24dp" android:paddingBottom="32dp">
             <!--  Titulo de la pantalla  -->
             <TextView android:layout_width="wrap_content"
@@ -32,7 +33,40 @@
             <!--  ===== Semestre =====  -->
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Semestre" android:textSize="13sp" android:textColor="#888888" android:layout_marginTop="12dp"/>
             <TextView android:id="@+id/tvSemestre" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sexto semestre" android:textSize="17sp" android:textColor="#000000" android:paddingTop="4dp" android:paddingBottom="10dp"/>
+
+
+            <!-- Botón Guardar -->
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:backgroundTint="#F57C00"
+                android:text="Guardar cambios"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <!-- Botón Actualizar -->
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actualizar perfil"
+                android:backgroundTint="#1E88E5"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Botón Eliminar -->
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#59BA32"
+                android:text="Eliminar cuenta" />
+
         </LinearLayout>
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
